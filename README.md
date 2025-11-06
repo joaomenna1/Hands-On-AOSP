@@ -46,6 +46,8 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
   - Pesquisa e análise detalhada do código da classe `ChooseLockGeneric.java`
   - Identificação dos métodos responsáveis pela seleção e inicialização das Activities de configuração de bloqueio
   - Elaboração de relatório técnico sobre a lógica de funcionamento do pattern lockscreen no AOSP
+  - [Ver relatório completo](./report2.md)
+
  
 ## Relatório – Análise da Classe `ChooseLockGeneric`
 
