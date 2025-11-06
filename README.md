@@ -24,21 +24,21 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
 
 
 ### Papéis dos Contribuidores
-- **Desenvolvedor 1**
+- **Desenvolvedor 1 (Poliana Cavalcante Tomé)**
   - Pesquisa do código responsável pela tela de desbloqueio
   - Desenvolvimento das alterações em Java
   - Documentação da atividade
 
-- **Desenvolvedor 2**
+- **Desenvolvedor 2 (Elian da Rocha Pinheiro)**
   - Pesquisa do código responsável pela tela de desbloqueio
   - Desenvolvimento das alterações em Java
   - Documentação da atividade
 
-- **Desenvolvedor 3**
+- **Desenvolvedor 3 (Diego Augusto de Abreu Furtado)**
   - Desenvolvimento das alterações em Java
   - Aplicação de patches e testes
 
-- **Desenvolvedor 4**
+- **Desenvolvedor 4 (Matheus Tenazor Arce)**
   - Desenvolvimento das alterações em Java
   - Aplicação de patches e testes
 
