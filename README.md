@@ -13,12 +13,11 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
 7. [Contato](#contato)
 
 ## Contribuidores
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
-<img src="https://github.com/DevTITANS05/Hands-On-Linux-fork-/assets/21023906/85e61f3e-476c-47a4-82d5-4054e856c67b" width="180" >
+<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/poliana.png" width="180" >
+<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/elian.png" width="180" >
+<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/diego.png" width="180" >
+<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/matheus.png" width="180" >
+<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/joao-menna.png" width="180" >
 
 ### Papéis dos Contribuidores
 - **Desenvolvedor 1**
