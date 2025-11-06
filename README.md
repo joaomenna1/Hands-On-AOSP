@@ -37,8 +37,13 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
   - xxxxxxxxxxxxxxx
 
 - **Desenvolvedor 4 (Matheus Tenazor Arce)**
-  - xxxxxxxxxxxxxxx
-  - xxxxxxxxxxxxxxx
+  - Encontrar a estrutura que guarda as opções de desbloqueio disponíveis.
+    -Print:
+    <img width="1131" height="774" alt="print_2_1" src="https://github.com/user-attachments/assets/77d5af1d-1808-4ad8-9367-1a2b1e0e9b85" />
+
+  - Explicar o que representa o atributo quality na estrutura.
+    - `lock.defaultQuality`  é um nível de qualidade de seguranca do tipo de bloqueo escolhido.
+    - Responsável : Matheus Tenazor
 
 - **Desenvolvedor 5 (João Roberto Nogueira Menna Barreto)**
   - Pesquisa e análise detalhada do código da classe `ChooseLockGeneric.java`
