@@ -25,22 +25,20 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
 
 ### Papéis dos Contribuidores
 - **Desenvolvedor 1 (Poliana Cavalcante Tomé)**
-  - Pesquisa do código responsável pela tela de desbloqueio
-  - Desenvolvimento das alterações em Java
-  - Documentação da atividade
+  - xxxxxxxxxxxxxxx
+  - xxxxxxxxxxxxxxx
 
 - **Desenvolvedor 2 (Elian da Rocha Pinheiro)**
-  - Pesquisa do código responsável pela tela de desbloqueio
-  - Desenvolvimento das alterações em Java
-  - Documentação da atividade
-
+  - xxxxxxxxxxxxxxx
+  - xxxxxxxxxxxxxxx
+  - 
 - **Desenvolvedor 3 (Diego Augusto de Abreu Furtado)**
-  - Desenvolvimento das alterações em Java
-  - Aplicação de patches e testes
+  - xxxxxxxxxxxxxxx
+  - xxxxxxxxxxxxxxx
 
 - **Desenvolvedor 4 (Matheus Tenazor Arce)**
-  - Desenvolvimento das alterações em Java
-  - Aplicação de patches e testes
+  - xxxxxxxxxxxxxxx
+  - xxxxxxxxxxxxxxx
 
 - **Desenvolvedor 5 (João Roberto Nogueira Menna Barreto)**
   - Pesquisa e análise detalhada do código da classe `ChooseLockGeneric.java`
