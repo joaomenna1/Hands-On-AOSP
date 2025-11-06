@@ -13,11 +13,15 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
 7. [Contato](#contato)
 
 ## Contribuidores
-<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/poliana.png" width="180" >
-<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/elian.png" width="180" >
-<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/diego.png" width="180" >
-<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/matheus.png" width="180" >
-<img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/joao-menna.png" width="180" >
+
+<div align="center">
+  <img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/poliana.png" width="180" />
+  <img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/elian.png" width="180" />
+  <img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/diego.png" width="180" />
+  <img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/matheus.png" width="180" />
+  <img src="https://github.com/joaomenna1/Hands-On-AOSP/blob/main/assets/joao-menna.png" width="180" />
+</div>
+
 
 ### Papéis dos Contribuidores
 - **Desenvolvedor 1**
