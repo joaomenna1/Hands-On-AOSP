@@ -80,7 +80,7 @@ Após a compilação, instale a imagem resultante no dispositivo de destino e te
 
 ## Contato
 Para mais informações ou dúvidas, entre em contato com:
-- Email: [seu-email@example.com](mailto:joaomenna1@gmail.com)
+- Email: [joaomenna1@gmail.com](mailto:joaomenna1@gmail.com)
 - GitHub: [joaomenna1](https://github.com/joaomenna1)
 
 Sinta-se à vontade para abrir issues ou enviar pull requests para contribuir com este projeto.
