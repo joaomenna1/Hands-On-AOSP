@@ -33,8 +33,19 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
   - xxxxxxxxxxxxxxx
   - 
 - **Desenvolvedor 3 (Diego Augusto de Abreu Furtado)**
-  - xxxxxxxxxxxxxxx
-  - xxxxxxxxxxxxxxx
+  - Relatório Atividade 1.1- Encontrar o código fonte da tela de desbloqueio:
+        Encontrado o arquivo strings.xml que define a string "Enter your pattern" que está em frameworks/base/packages/SystemUI/res-keyguard/values/strings.xml
+       Guardado o nome dessa string (campo name da tag string do arquivo strings.xml): "keyguard_enter_your_pattern"
+       O correspondente dessa string em português é "Desenhe o padrão"
+
+       Descreva como vocês encontraram o arquivo que guarda a string "Enter your pattern"
+       R: Foi pesquisado "Enter your pattern" no código fonte do aosp
+
+       Explique como usou a tag name dessa string para encontrar a tradução desse texto no strings.xml em português.
+       R: Uma vez que foi encontrado o arquivo strings.xml dentro de frameworks/base/packages/SystemUI/res-keyguard/values/, e guardada a string "keyguard_enter_your_pattern", foi procurada a string "keyguard_enter_your_pattern" dentro de frameworks/         base/packages/SystemUI/res-keyguard/values-pt-rBR/ para descobrir o correspondente em pt-BR
+
+       
+   xxxxxxxxxxxxxxx
 
 - **Desenvolvedor 4 (Matheus Tenazor Arce)**
   - Encontrar a estrutura que guarda as opções de desbloqueio disponíveis.
