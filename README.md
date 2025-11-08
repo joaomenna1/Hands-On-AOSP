@@ -73,9 +73,13 @@ Aluno Contribuição principal
 
 Aluno 1 – Poliana Tomé - Realizou a busca no Android Code Search e identificou o arquivo strings.xml com a definição da string “Choose a new screen lock”. Aluno 2 – João Menna - Orientou onde encontrar análise do código Java, utilizando o identificador lock_settings_picker_update_lock_title para localizar onde ele era usado no código-fonte (ChooseLockGeneric.java). Aluno 3 – Poliana Tomé e Matheus Arce - Documentou o processo e descreveu a relação entre o recurso de string XML e o título exibido na tela de configurações de desbloqueio. Também revisou a explicação final.
 - **Desenvolvedor 2 (Elian da Rocha Pinheiro)**
-  - xxxxxxxxxxxxxxx
-  - xxxxxxxxxxxxxxx
-  - 
+- Responsavel pela pesquisa sobre as multiplas telas de configuração de bloqueio.
+- 
+  -A classe ChooseLockGenericFragment no código-fonte controla a configuração do bloqueio de tela, usando a enumeração ScreenLockType para definir os tipos de bloqueio, como padrão, senha e PIN. A função setUnlockMethod inicia a troca do método de desbloqueio quando o usuário seleciona uma opção. Já a função updateUnlockMethodAndFinish valida a senha do usuário e define a qualidade do bloqueio, iniciando a configuração correspondente através de um Intent. Se o bloqueio for "Nenhum" ou "Deslizar", as credenciais são removidas e o bloqueio desativado. A máquina de estado ilustra as transições entre os diferentes tipos de bloqueio de tela.
+
+    - [Ver relatório completo](./report/report3.md)
+
+
 - **Desenvolvedor 3 (Diego Augusto de Abreu Furtado)**
   - Relatório Atividade 1.1- Encontrar o código fonte da tela de desbloqueio:
        - Encontrado o arquivo strings.xml que define a string "Enter your pattern" que está em frameworks/base/packages/SystemUI/res-keyguard/values/strings.xml
