@@ -75,7 +75,7 @@ Aluno 1 – Poliana Tomé - Realizou a busca no Android Code Search e identifico
 - **Desenvolvedor 2 (Elian da Rocha Pinheiro)**
 - Responsavel pela pesquisa sobre as multiplas telas de configuração de bloqueio.
 - 
-  -A classe ChooseLockGenericFragment no código-fonte controla a configuração do bloqueio de tela, usando a enumeração ScreenLockType para definir os tipos de bloqueio, como padrão, senha e PIN. A função setUnlockMethod inicia a troca do método de desbloqueio quando o usuário seleciona uma opção. Já a função updateUnlockMethodAndFinish valida a senha do usuário e define a qualidade do bloqueio, iniciando a configuração correspondente através de um Intent. Se o bloqueio for "Nenhum" ou "Deslizar", as credenciais são removidas e o bloqueio desativado. A máquina de estado ilustra as transições entre os diferentes tipos de bloqueio de tela.
+  **Resumo**:A classe ChooseLockGenericFragment no código-fonte controla a configuração do bloqueio de tela, usando a enumeração ScreenLockType para definir os tipos de bloqueio, como padrão, senha e PIN. A função setUnlockMethod inicia a troca do método de desbloqueio quando o usuário seleciona uma opção. Já a função updateUnlockMethodAndFinish valida a senha do usuário e define a qualidade do bloqueio, iniciando a configuração correspondente através de um Intent. Se o bloqueio for "Nenhum" ou "Deslizar", as credenciais são removidas e o bloqueio desativado. A máquina de estado ilustra as transições entre os diferentes tipos de bloqueio de tela.
 
     - [Ver relatório completo](./report/report3.md)
 
