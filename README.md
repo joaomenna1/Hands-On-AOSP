@@ -24,91 +24,42 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
 
 
 ### Papéis dos Contribuidores
-- **Desenvolvedor 1 (Poliana Cavalcante Tomé)**
- Atividade 1.2
 
-A) Descreva como vocês encontraram o arquivo que guarda a string "Choose a new screen lock"
+- **Desenvolvedor 1 (Poliana Cavalcante Tomé)**  
+  - Pesquisa e identificação do arquivo `strings.xml` que contém a string `"Choose a new screen lock"`  
+  - Localização do atributo `lock_settings_picker_update_lock_title` e mapeamento com o código Java no arquivo `ChooseLockGeneric.java`  
+  - Documentação do processo de rastreamento da string até a classe responsável pela tela de configuração de bloqueio  
+  - Colaboração com João Menna e Matheus Arce na revisão e explicação do funcionamento do recurso  
 
-a.1 - O método que utilizamos e no qual encontramos o arquivo que guarda a string "Choose a new screen lock". Para localizar o arquivo onde a string estava definida, utilizamos o Android Code Search (https://cs.android.com). No campo de busca, foi feita a pesquisa como exemplificado na descrição da atividade:
+---
 
-"Choose a new screen lock"
+- **Desenvolvedor 2 (Elian da Rocha Pinheiro)**  
+  - Pesquisa sobre as múltiplas telas de configuração de bloqueio no AOSP  
+  - Análise da classe `ChooseLockGenericFragment` e da enumeração `ScreenLockType`  
+  - Estudo das funções `setUnlockMethod` e `updateUnlockMethodAndFinish`, responsáveis pela troca e validação dos métodos de desbloqueio  
+  - Descrição do fluxo lógico e da máquina de estados dos tipos de bloqueio de tela  
 
-a.2 - No qual o mecanismo de busca retornou o arquivo:
+---
 
-packages/apps/Settings/res/values-en-rGB/strings.xml
+- **Desenvolvedor 3 (Diego Augusto de Abreu Furtado)**  
+  - Localização do arquivo `strings.xml` que contém a string `"Enter your pattern"` em `frameworks/base/packages/SystemUI/res-keyguard/values/`  
+  - Identificação do atributo `keyguard_enter_your_pattern` e sua tradução correspondente no arquivo `values-pt-rBR`  
+  - Análise do fluxo de exibição da tela de padrão de desbloqueio (pattern lockscreen)  
+  - Documentação do processo de rastreamento e correspondência entre strings em inglês e português  
 
-a.3 Dentro desse arquivo, foi encontrada a linha:
+---
 
-Choose a new screen lock
+- **Desenvolvedor 4 (Matheus Tenazor Arce)**  
+  - Investigação da estrutura de código responsável por armazenar as opções de desbloqueio disponíveis  
+  - Identificação do atributo `lock.defaultQuality` e explicação de seu papel como nível de segurança do tipo de bloqueio  
+  - Colaboração na documentação da correlação entre o nível de qualidade e o método de desbloqueio selecionado  
 
-Portanto, a string que armazena o texto “Choose a new screen lock” possui o atributo name:
+---
 
-lock_settings_picker_update_lock_title
-
-Esse é o identificador usado pelo código Java do Android para referenciar essa string no aplicativo Settings que usamos.
-
-B) Explique como usou a tag name dessa string para encontrar o código fonte que define a tela de configurações de desbloqueio.
-
-Como usamos a tag name para encontrar o código-fonte da tela de configurações de desbloqueio. Após identificar o nome da string (lock_settings_picker_update_lock_title), o próximo passo foi procurar onde ela é utilizada no código-fonte Java do app Settings.
-
-b.1 - Foi feita uma busca no diretório de código-fonte do Settings (no AOSP):
-
-grep -R "R.string.lock_settings_picker_update_lock_title" packages/apps/Settings/src/
-
-b.2 - A busca revelou que a string é usada no arquivo:
-
-packages/apps/Settings/src/com/android/settings/password/ChooseLockGeneric.java
-
-b.3 - Dentro desse arquivo, no método updateActivityTitle(), encontramos:
-
-if (updateExistingLock) { getActivity().setTitle(R.string.lock_settings_picker_update_lock_title); } else { getActivity().setTitle(R.string.lock_settings_picker_new_lock_title); }
-
-Esse trecho define o título da tela de seleção de bloqueio de tela (“Choose a new screen lock” ou “Choose screen lock”) dependendo do contexto — se o usuário está criando um novo bloqueio ou atualizando um existente. Logo, o código que usa essa string pertence à classe ChooseLockGeneric.ChooseLockGenericFragment, responsável pela tela principal de configuração de bloqueio do dispositivo Android.
-
-C)Enumere os alunos responsáveis por essa task e as principais contribuições de cada um (contribuição pode ser codigo escrito, ideias, sugestões ou qualquer coisa que contribuiu para a realização da task)
-
-C.1 Alunos responsáveis pela task e principais contribuições
-
-Aluno Contribuição principal
-
-Aluno 1 – Poliana Tomé - Realizou a busca no Android Code Search e identificou o arquivo strings.xml com a definição da string “Choose a new screen lock”. Aluno 2 – João Menna - Orientou onde encontrar análise do código Java, utilizando o identificador lock_settings_picker_update_lock_title para localizar onde ele era usado no código-fonte (ChooseLockGeneric.java). Aluno 3 – Poliana Tomé e Matheus Arce - Documentou o processo e descreveu a relação entre o recurso de string XML e o título exibido na tela de configurações de desbloqueio. Também revisou a explicação final.
-- **Desenvolvedor 2 (Elian da Rocha Pinheiro)**
-- Responsavel pela pesquisa sobre as multiplas telas de configuração de bloqueio.
-- 
-  **Resumo**:A classe ChooseLockGenericFragment no código-fonte controla a configuração do bloqueio de tela, usando a enumeração ScreenLockType para definir os tipos de bloqueio, como padrão, senha e PIN. A função setUnlockMethod inicia a troca do método de desbloqueio quando o usuário seleciona uma opção. Já a função updateUnlockMethodAndFinish valida a senha do usuário e define a qualidade do bloqueio, iniciando a configuração correspondente através de um Intent. Se o bloqueio for "Nenhum" ou "Deslizar", as credenciais são removidas e o bloqueio desativado. A máquina de estado ilustra as transições entre os diferentes tipos de bloqueio de tela.
-
-    - [Ver relatório completo](./report/report3.md)
-
-
-- **Desenvolvedor 3 (Diego Augusto de Abreu Furtado)**
-  - Relatório Atividade 1.1- Encontrar o código fonte da tela de desbloqueio:
-       - Encontrado o arquivo strings.xml que define a string "Enter your pattern" que está em frameworks/base/packages/SystemUI/res-keyguard/values/strings.xml
-       - Guardado o nome dessa string (campo name da tag string do arquivo strings.xml): "keyguard_enter_your_pattern"
-       - O correspondente dessa string em português é "Desenhe o padrão"
-       
-       - Descreva como vocês encontraram o arquivo que guarda a string "Enter your pattern"
-         - R: Foi pesquisado "Enter your pattern" no código fonte do aosp
-
-       - Explique como usou a tag name dessa string para encontrar a tradução desse texto no strings.xml em português.
-         - R: Uma vez que foi encontrado o arquivo strings.xml dentro de frameworks/base/packages/SystemUI/res-keyguard/values/, e guardada a string "keyguard_enter_your_pattern", foi procurada a string "keyguard_enter_your_pattern" dentro de frameworks/base/packages/SystemUI/res-keyguard/values-pt-rBR/ para descobrir o correspondente em pt-BR
-
-       
-   xxxxxxxxxxxxxxx
-
-- **Desenvolvedor 4 (Matheus Tenazor Arce)**
-  - Encontrar a estrutura que guarda as opções de desbloqueio disponíveis.
-    -Print:
-    <img width="1131" height="774" alt="print_2_1" src="https://github.com/user-attachments/assets/77d5af1d-1808-4ad8-9367-1a2b1e0e9b85" />
-
-  - Explicar o que representa o atributo quality na estrutura.
-    - `lock.defaultQuality`  é um nível de qualidade de seguranca do tipo de bloqueo escolhido.
-    - Responsável : Matheus Tenazor
-
-- **Desenvolvedor 5 (João Roberto Nogueira Menna Barreto)**
-  - Pesquisa e análise detalhada do código da classe `ChooseLockGeneric.java`
-  - Identificação dos métodos responsáveis pela seleção e inicialização das Activities de configuração de bloqueio
-  - Elaboração de relatório técnico sobre a lógica de funcionamento do pattern lockscreen no AOSP
-  - [Ver relatório completo](./report/report2.md)
+- **Desenvolvedor 5 (João Roberto Nogueira Menna Barreto)**  
+  - Pesquisa e análise detalhada do código da classe `ChooseLockGeneric.java`  
+  - Identificação dos métodos responsáveis pela seleção e inicialização das Activities de configuração de bloqueio  
+  - Elaboração de relatório técnico sobre a lógica de funcionamento do pattern lockscreen no AOSP  
 
 ## Recursos
 Para rodar esta atividade, você precisará de:
