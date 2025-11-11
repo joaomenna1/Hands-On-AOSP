@@ -45,7 +45,9 @@ Este repositório contém um trabalho prático sobre a alteração da tela de de
   - Localização do arquivo `strings.xml` que contém a string `"Enter your pattern"` em `frameworks/base/packages/SystemUI/res-keyguard/values/`  
   - Identificação do atributo `keyguard_enter_your_pattern` e sua tradução correspondente no arquivo `values-pt-rBR`  
   - Análise do fluxo de exibição da tela de padrão de desbloqueio (pattern lockscreen)  
-  - Documentação do processo de rastreamento e correspondência entre strings em inglês e português  
+  - Documentação do processo de rastreamento e correspondência entre strings em inglês e português
+  - [Diagrama de sequencia](https://github.com/MTarce/Hands-On-AOSP/blob/main/Diagrama.jpg)
+  - [Script bash](https://github.com/MTarce/Hands-On-AOSP/blob/main/setup_aosp.sh) Obs.: precisa definir a permissão de execução com "chmod a+x"
 
 ---
 
